@@ -41,7 +41,7 @@ namespace producentSamJSON
 
             if (items.Results != null)
             {
-                lblDane.Text = $"Marka: {items.Results[0].Make_Name} (id: {items.Results[0].Make_ID}) \n\nModele:\n";
+                lblDane.Text = $"Marka: {items.Results[0].Make_Name} (id: {items.Results[0].Make_ID}) \n\nModele ({items.Results.Count}):\n";
                 foreach (Models model in items.Results)
                 {
                     lblDane.Text += $"{model.Model_Name} (id: {model.Model_ID}) \n";
