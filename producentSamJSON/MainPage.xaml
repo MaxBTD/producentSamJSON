@@ -4,10 +4,15 @@
              x:Class="producentSamJSON.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout>
-            <Entry />
-            <Button Clicked="onDataDownloadClicked"/>
-            <Label x:Name="lblDane"/>
+        <VerticalStackLayout Spacing="20">
+            <Entry x:Name="entMarka"
+                   WidthRequest="500"
+                   HorizontalTextAlignment="Center"/>
+            <Button Clicked="onDataDownloadClicked"
+                    Text="Wyszukaj Markę w Bazie Danych"
+                    WidthRequest="250"/>
+            <Label x:Name="lblDane"
+                   HorizontalTextAlignment="Center"/>
         </VerticalStackLayout>
     </ScrollView>
 
